@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rows and columns</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr; /*rest becomes 1fr(fraction)*/
+            grid-auto-rows: 3fr;
+            grid-template-columns: 1fr 4fr 2fr;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 4rem;
+        }
+        .box{
+            background-color: red;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is a Box-1</div>
+        <div class="box">This is a Box-2</div>
+        <div class="box">This is a Box-3</div>
+        <div class="box">This is a Box-4</div>
+        <div class="box">This is a Box-5</div>
+        <div class="box">This is a Box-6</div>
+        <div class="box">This is a Box-7</div>
+        <div class="box">This is a Box-8</div>
+        <div class="box">This is a Box-9</div>
+        <div class="box">This is a Box-10</div>
+    </div>
+</body>
+</html>

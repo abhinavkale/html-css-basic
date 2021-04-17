@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Display</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 2px solid red;
+              margin:auto;
+            width:1200px;  
+        }
+        .rohit{
+             display:block;/*image set to middle */
+            margin: 2px auto;
+            border: 2px solid rgb(26, 26, 110);
+            border-radius: 20px;
+            
+        }
+        h3{
+            text-align: center;
+            margin:0px;
+        }
+        .box{
+            border:2px solid rgb(53, 52, 51);
+            background-color: rgb(172, 172, 240);
+            margin-top:7px;
+            padding:10px;
+             display:inline-block; /*Important */
+            width:33%; /*Important*/
+            box-sizing: border-box;
+        }
+         .container{
+            margin:auto;
+            
+            width:1200px;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+    
+    <img class="rohit "src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Rohit_Sharma_November_2016_%28cropped%29.jpg/260px-Rohit_Sharma_November_2016_%28cropped%29.jpg" alt="IMG">
+    <h3>Heading tag Parargraph</h3>
+
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores atque laborum quas quae nemo dolorem aliquid officia enim, laudantium hic perspiciatis fuga cumque accusamus dignissimos harum similique eaque eum. Excepturi.</p>
+        </div>
+
+        <div class="box">
+                <h4 class="heading">Heading</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores atque laborum quas quae nemo dolorem aliquid officia enim, laudantium hic perspiciatis fuga cumque accusamus dignissimos harum similique eaque eum. Excepturi.</p>
+        </div>
+
+        <div class="box">
+                <h4 class="heading">Heading</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores atque laborum quas quae nemo dolorem aliquid officia enim, laudantium hic perspiciatis fuga cumque accusamus dignissimos harum similique eaque eum. Excepturi.</p>
+        </div>
+    </div>
+</body>
+</html>

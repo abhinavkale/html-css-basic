@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(241, 192, 173);
+            font-family: 'Muli', sans-serif; 
+        }
+        .container{
+            width:510px;
+            border:3px solid rgb(34, 19, 19);
+            padding:20px 2px;
+            margin: 40px auto;
+            background-color: rgb(177, 121, 53);
+        }
+
+        .item{
+            border:3px solid black;
+            margin:12px 3px;
+            padding:12px 3px;
+            background: rgb(187, 187, 245);
+        }
+        #fruits{
+            float: left;
+            width:48%;
+        }
+        #Computer{
+            float: right;
+            width:48%;
+        }
+        #Stationary{
+            /* float: left; */
+           clear:both;
+            width:99%;
+            margin:0px 2px 0px 2px;
+        }
+        
+        p,h3{
+            text-align:right;
+            text-align:left;
+            text-align:center;
+            text-align:justify;
+        }
+        h1{
+            text-align:center;
+            margin: 20px auto;
+            width: 455px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>STORES SHOP</h1>
+
+        <div id="fruits" class="item">
+            <h3>Apple</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore soluta veritatis delectus beatae commodi autem exercitationem necessitatibus laboriosam sunt reiciendis officia, veniam earum labore praesentium!</p>
+        </div>
+
+        <div id="Computer" class="item">
+                <h3>Windows</h3>
+                <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore soluta veritatis delectus beatae commodi autem exercitationem necessitatibus laboriosam sunt reiciendis officia, veniam earum labore praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ullam nostrum alias, aspernatur non deleniti dolorem consequatur eum sed ad vitae quaerat architecto nesciunt placeat, earum molestiae ipsum in sint? Maiores amet atque adipisci sunt?
+                </p>
+        </div>
+
+        <div id="Stationary" class="item">
+                <h3>BOOKS</h3>
+                <p id="stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore soluta veritatis delectus beatae commodi autem exercitationem necessitatibus laboriosam sunt reiciendis officia, veniam earum labore praesentium!</p>
+        </div>
+
+        <div id="Glass" class="item">
+                <h3>Glass</h3>
+                <p id="glasspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore soluta veritatis delectus beatae commodi autem exercitationem necessitatibus laboriosam sunt reiciendis officia, veniam earum labore praesentium!</p>
+        </div>
+
+    </div>
+</body>
+</html>

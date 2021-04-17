@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js SettimeOut and clearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+       Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is Console");
+        /*setTimeOut-->Allows us to run the function once after the interval of time
+        clearTimeOut-->Allows us to run the function repeatedly after the interval of time*/
+
+        function greet(name){
+            console.log("Heelooo"+name);
+        }
+        //setTimeout(greet,5000,"Abhi");//ms
+       // setTimeout(greet(),12000); will not work because of parenthesis
+      // timeout=setTimeout(greet,5000,"Abhi");
+      // console.log(timeout);
+      //  clearTimeout(timeout);
+
+        //intervalid=setInterval(greet,2000,"Heloo");
+        //clearInterval(intervalid);
+
+        function displayTime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+
+        setInterval(displayTime,1000);
+        clearInterval(displayTime);
+
+    </script>
+</body>
+</html>

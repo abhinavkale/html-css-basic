@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive and font size units</title>
+    <style>
+        html{
+            font-size:10px;
+        }
+        .container{
+            font-size: 3px;
+            border:2px solid red;
+            width:400vw;/*viewport width*/
+            height:100vh; /*takes height as whole page(viewport height)*/
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            font-size: 5em; /*5*parent fsize 15px*/
+            padding:3em; /*3 *(3*fontsize) 27px*/
+        }
+        #second{
+            font-size:3rem; /*use root element html 3*10 */
+            padding:3rem; /*IMP same*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is Heading</h1>
+        <h1 id="second">This is 222 Heading</h1>
+        <h1 id="third">This is 333 Heading</h1>
+        <h1 id="fourth">This is 444 Heading</h1>    
+    </div>
+</body>
+</html>

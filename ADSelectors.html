@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: brown;
+            color:black;
+            font-weight: bold;
+            text-align: center;
+        }
+       /* div  p{
+            color:brown;
+            background-color: chocolate;
+        }*/
+
+        /*div li p{
+            color:brown;
+            background-color: chocolate;
+        }*/
+
+        /* div > p{
+            color:brown;
+            background-color: chocolate;
+        } */
+
+        div + p{  /* div then p occures */
+            color:white;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        More on selectors
+    </h1>
+    <div class="container">
+        <div class="row">
+            <p>This is paragraph</p>
+            <ul>
+                <li class="item"><p>This is paragraph inside li</p></li>
+            </ul>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Math Object</title>
+</head>
+
+<body>
+    <script>
+        let m = Math;
+        console.log(m);
+        console.log("Value of E is",Math.E);
+
+        E: 2.718281828459045
+        LN10: 2.302585092994046
+        LN2: 0.6931471805599453
+        LOG10E: 0.4342944819032518
+        LOG2E: 1.4426950408889634
+        PI: 3.141592653589793
+        SQRT1_2: 0.7071067811865476
+        SQRT2: 1.4142135623730951
+        
+
+        let a=56.786;
+        console.log("Round value ",Math.round(a));
+        console.log(Math.pow(2,3));
+        console.log(Math.sqrt(49));
+        console.log("Round up",Math.ceil(5.8));
+        console.log("Round down",Math.floor(5.8));
+        console.log(Math.abs(-5.6));
+        console.log(Math.sin(Math.PI/2));
+        console.log(Math.min(3,5,8));
+        console.log(Math.max(55,88,2,1));
+
+        //Generating random No
+        let r=Math.random();
+        console.log(r);//0-1
+
+        //(a,b)=a+(b-a)*Math.random()
+        let a1=1;
+        let b1=100;
+        let r1=a1+(b1-a1)*Math.random();
+        console.log(r1);
+
+        let jsonObj={
+            name:'Abhi',
+            rno:26,
+            college:"PICT"
+        }
+        console.log(jsonObj);
+        let myjsonStr=JSON.stringify(jsonObj);//convert object to string
+        console.log(myjsonStr);
+
+        myjsonStr=myjsonStr.replace("Abhi",'Abhinav');
+        console.log(myjsonStr);
+
+        let newJsonObj=JSON.parse(myjsonStr);//convert string to object
+        console.log(newJsonObj);
+
+    </script>
+</body>
+
+</html>

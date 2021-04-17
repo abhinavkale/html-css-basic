@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Date AND Time</title>
+    <style>
+        .container{
+            font-size:23px;
+            background-color: burlywood;
+            border:2px solid black;
+            padding:34px;
+            margin:4px;
+            text-align: center;
+            align-items: center;
+        }
+        #time{
+            font:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Container
+        current Time is <span id="time">
+
+        </span>
+    </div>
+    <script>
+        console.log("Date And Time");
+        // let now=Date();
+        // console.log(now);
+
+        // let dt=new Date(1000);//reference
+        //console.log(dt);
+
+        // let newDate=new Date("2020-08-31");
+        // console.log(newDate);
+
+        // let newDate=new Date(year,month,date,hour,minute,second,millisecond);
+
+        let newDate = new Date(2020, 12, 6, 7, 3, 20);
+        console.log(newDate);
+
+
+        let yr = newDate.getFullYear();
+        console.log("Year is ", yr);
+
+        let dt = newDate.getDate();
+        console.log("DAte is ", dt);
+
+        let mn = newDate.getMonth();
+        console.log("Month is ", mn);
+
+        let hr = newDate.getHours();
+        console.log("Hour is ", hr);
+
+        newDate.setDate(17);
+        newDate.setMinutes(12);
+        console.log(newDate);
+
+        setInterval(updateTime,1000);
+        function updateTime(){
+            time.innerHTML=new Date();
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "nodenpm",
+  "version": "1.0.0",
+  "description": "node package",
+  "main": "NodeNPM.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "abhinav",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "~16.5.0",
+    "slugify": ">1.3.5"
+  }
+}

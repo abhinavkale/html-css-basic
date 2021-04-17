@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position absolute realtive fixed</title>
+    <style>
+        /* position:static(default),absolue,relative,fixed,sticky; */
+        .conatiner{
+            border:2px solid black;
+            background-color: sandybrown;
+            height:4000px;
+        }
+        .box{
+            border:2px solid red;
+            width:150px;
+            height:150px;
+            margin:2px;
+            display:inline-block;
+        }
+        #box3{
+                
+             /* position: relative;/*relative to its normal position and will leave a gap 
+             top:34px;
+             left:34px; */
+
+             /* position:absolute;  /* absolute:relative to position of first parent i.e conatiner
+             top:34px;
+             left:34px; */
+
+            /* position:fixed; */
+
+            /* position:fixed;  /*used as chatwindow;;fixed position realtive to browser window
+            right:14px;
+            bottom:15px;  */
+
+            position:sticky;/*used  for menu*/
+            top:3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transfrom Property</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    .container{
+        display:flex;
+        height:80vh;
+        align-items:center;
+        justify-content: center;
+        background:cornflowerblue;
+    }
+    .box{
+        display:flex;
+        background:brown;
+        border:2px solid black;
+        border-radius:20px;
+        justify-content: center;
+        align-items: center;
+        height:200px;
+        width:200px;
+        /* transform:rotate(45deg); */
+        transition:all 0.5s ease-in-out;
+    }
+    .box:hover{
+        /* transform:rotate(360deg); */
+        /* transform:skew(40deg); */
+        /* transform:scale(1.5); */
+        transform:translateX(120px);
+        transform:translate(120px,60px);
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+</html>
